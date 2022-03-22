@@ -43,11 +43,12 @@ export class JwtInterceptor implements HttpInterceptor {
   }
 
   isAllowedDomain(request: HttpRequest<any>): boolean {
-    const requestUrl: URL = new URL(request.url, this.document.location.origin);
+    let origin = this.document.location ? this.document.location.origin : null;
+    const requestUrl: URL = new URL(request.url, origin);
 
     // If the host equals the current window origin,
     // the domain is allowed by default
-    if (requestUrl.host === this.document.location.host) {
+    if (this.document.location && (requestUrl.host === this.document.location.host)) {
       return true;
     }
 
@@ -70,9 +71,11 @@ export class JwtInterceptor implements HttpInterceptor {
   }
 
   isDisallowedRoute(request: HttpRequest<any>): boolean {
+    
+    let origin = this.document.location ? this.document.location.origin : null;
     const requestedUrl: URL = new URL(
       request.url,
-      this.document.location.origin
+      origin
     );
 
     return (
@@ -80,7 +83,7 @@ export class JwtInterceptor implements HttpInterceptor {
         if (typeof route === "string") {
           const parsedRoute: URL = new URL(
             route,
-            this.document.location.origin
+            origin
           );
           return (
             parsedRoute.hostname === requestedUrl.hostname &&
