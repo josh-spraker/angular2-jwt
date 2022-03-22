@@ -1,8 +1,8 @@
 /*
- * Public API Surface of angular-jwt
+ * Public API Surface of nativescript-angular-jwt
  */
 
 export * from './lib/jwt.interceptor';
 export * from './lib/jwthelper.service';
 export * from './lib/jwtoptions.token';
-export * from './lib/angular-jwt.module';
+export * from './lib/nativescript-angular-jwt.module';

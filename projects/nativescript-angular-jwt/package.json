@@ -1,5 +1,5 @@
 {
-    "name": "@auth0/angular-jwt",
+    "name": "nativescript-angular-jwt",
     "version": "5.0.2",
     "description": "JSON Web Token helper library for Angular",
     "private": false,
