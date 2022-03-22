@@ -1,15 +1,15 @@
 {
-    "name": "@auth0/angular-jwt",
-    "version": "5.0.2",
+    "name": "nativescript-angular-jwt",
+    "version": "1.0.0",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build angular-jwt --prod",
-        "postbuild": "cp ./README.md ./CHANGELOG.md ./LICENSE ./dist/angular-jwt/",
+        "build": "ng build nativescript-angular-jwt --prod",
+        "postbuild": "cp ./README.md ./CHANGELOG.md ./LICENSE ./dist/nativescript-angular-jwt/",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "release": "npm publish dist/angular-jwt/"
+        "release": "npm publish dist/nativescript-angular-jwt/"
     },
     "private": false,
     "dependencies": {
@@ -47,7 +47,7 @@
         "typescript": "~3.9.5"
     },
     "np": {
-        "contents": "dist/angular-jwt"
+        "contents": "dist/nativescript-angular-jwt"
     },
     "publishConfig": {
         "access": "public"

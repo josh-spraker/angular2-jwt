@@ -4,7 +4,7 @@ import {
   HttpClientTestingModule,
   HttpTestingController,
 } from "@angular/common/http/testing";
-import { JwtModule } from "angular-jwt";
+import { JwtModule } from "nativesript-angular-jwt";
 
 export function tokenGetter() {
   return "TEST_TOKEN";

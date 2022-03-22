@@ -20,11 +20,11 @@
       "dom"
     ],
     "paths": {
-      "angular-jwt": [
-        "projects/angular-jwt/src/index"
+      "nativescript-angular-jwt": [
+        "projects/nativescript-angular-jwt/src/index"
       ],
-      "angular-jwt/*": [
-        "projects/angular-jwt/src/*"
+      "nativescript-angular-jwt/*": [
+        "projects/nativescript-angular-jwt/src/*"
       ]
     }
   }

@@ -17,10 +17,10 @@
       "path": "./e2e/tsconfig.e2e.json"
     },
     {
-      "path": "./projects/angular-jwt/tsconfig.lib.json"
+      "path": "./projects/nativescript-angular-jwt/tsconfig.lib.json"
     },
     {
-      "path": "./projects/angular-jwt/tsconfig.spec.json"
+      "path": "./projects/nativescript-angular-jwt/tsconfig.spec.json"
     }
   ]
 }
