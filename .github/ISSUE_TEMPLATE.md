@@ -11,10 +11,10 @@ Description of the bug or feature request and why it's a problem. Consider inclu
 
 ### Prerequisites
 
-- [ ] I have checked the [README documentation](https://github.com/auth0/angular2-jwt/blob/master/README.md).
+- [ ] I have checked the [README documentation](https://github.com/nativescript-angular-jwt/blob/master/README.md).
 - [ ] I have checked the [Auth0 Community](https://community.auth0.com/) for related posts.
-- [ ] I have checked for related or duplicate [Issues](https://github.com/auth0/angular2-jwt
-/issues) and [PRs](https://github.com/auth0/angular2-jwt
+- [ ] I have checked for related or duplicate [Issues](https://github.com/nativescript-angular-jwt
+/issues) and [PRs](https://github.com/nativescript-angular-jwt
 /pulls).
 - [ ] I have read the [Auth0 general contribution guidelines](https://github.com/auth0/open-source-template/blob/master/GENERAL-CONTRIBUTING.md).
 - [ ] I have read the [Auth0 Code of Conduct](https://github.com/auth0/open-source-template/blob/master/CODE-OF-CONDUCT.md).
@@ -24,7 +24,7 @@ Description of the bug or feature request and why it's a problem. Consider inclu
 
 Please provide the following:
 
-- Version of angular2-jwt being used
+- Version of nativescript-angular-jwt being used
 - Version of the platform or framework used, if applicable
 - Relevant environmental versions (language version, server software, OS version)
 - Browser version, if applicable

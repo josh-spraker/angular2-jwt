@@ -1,8 +1,8 @@
 # nativescript-angular-jwt
 
-[![npm version](https://badge.fury.io/js/%40auth0%2Fangular-jwt.svg)](https://badge.fury.io/js/nativescript-angular-jwt)
+[![npm version](https://badge.fury.io/js/nativescript-angular-jwt.svg)](https://badge.fury.io/js/nativescript-angular-jwt)
 
-### **NOTE:** This library is now at version 5 and is published on npm as `nativescript-angular-jwt`. If you're looking for the pre-v1.0 version of this library, it can be found in the `pre-v1.0` branch and on npm as `angular2-jwt`.
+### **NOTE:** This library is now at version 5 and is published on npm as `nativescript-angular-jwt`. If you're looking for the pre-v1.0 version of this library, it can be found in the `pre-v1.0` branch and on npm as `nativescript-angular-jwt`.
 
 **Version v5 of this library has some breaking changes concerning the `allowedDomains` and `disallowedRoutes`.**
 
@@ -13,12 +13,6 @@ This library provides an `HttpInterceptor` which automatically attaches a [JSON 
 This library does not have any functionality for (or opinion about) implementing user authentication and retrieving JWTs to begin with. Those details will vary depending on your setup, but in most cases, you will use a regular HTTP request to authenticate your users and then save their JWTs in local storage or in a cookie if successful.
 
 > **Note:** This library can only be used with Angular 4.3 and higher because it relies on an `HttpInterceptor` from Angular's `HttpClient`. This feature is not available on lower versions.
-
-## Sponsor
-
-|||
-|-|-|
-|![auth0 logo](https://user-images.githubusercontent.com/83319/31722733-de95bbde-b3ea-11e7-96bf-4f4e8f915588.png)|If you want to quickly add secure token-based authentication to your Angular projects, feel free to check Auth0's Angular SDK and free plan at [auth0.com/developers](https://auth0.com/developers?utm_source=GHsponsor&utm_medium=GHsponsor&utm_campaign=angular2-jwt&utm_content=auth)|
 
 ## Installation
 
