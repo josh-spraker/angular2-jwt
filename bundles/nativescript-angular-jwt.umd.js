@@ -1,6 +1,6 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('rxjs/operators'), require('rxjs'), require('@angular/common/http')) :
-    typeof define === 'function' && define.amd ? define('@nativescript-angular-jwt', ['exports', '@angular/core', '@angular/common', 'rxjs/operators', 'rxjs', '@angular/common/http'], factory) :
+    typeof define === 'function' && define.amd ? define('nativescript-angular-jwt', ['exports', '@angular/core', '@angular/common', 'rxjs/operators', 'rxjs', '@angular/common/http'], factory) :
     (global = global || self, factory((global.auth0 = global.auth0 || {}, global.auth0['nativescript-angular-jwt'] = {}), global.ng.core, global.ng.common, global.rxjs.operators, global.rxjs, global.ng.common.http));
 }(this, (function (exports, core, common, operators, rxjs, http) { 'use strict';
 
