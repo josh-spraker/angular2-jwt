@@ -1,12 +1,12 @@
-# nativescript-angular-jwt
+# @nativescript-angular-jwt
 
-[![npm version](https://badge.fury.io/js/nativescript-angular-jwt.svg)](https://badge.fury.io/js/nativescript-angular-jwt)
+[![npm version](https://badge.fury.io/js/%40auth0%2Fangular-jwt.svg)](https://badge.fury.io/js/%40auth0%2Fangular-jwt)
 
-### **NOTE:** This library is now at version 5 and is published on npm as `nativescript-angular-jwt`. If you're looking for the pre-v1.0 version of this library, it can be found in the `pre-v1.0` branch and on npm as `nativescript-angular-jwt`.
+### **NOTE:** This library is now at version 5 and is published on npm as `@nativescript-angular-jwt`. If you're looking for the pre-v1.0 version of this library, it can be found in the `pre-v1.0` branch and on npm as `angular2-jwt`.
 
 **Version v5 of this library has some breaking changes concerning the `allowedDomains` and `disallowedRoutes`.**
 
-**nativescript-angular-jwt v5 is to be used with Angular v10+ and RxJS v6+. For Angular v6+ to v9, use nativescript-angular-jwt v4**
+**@nativescript-angular-jwt v5 is to be used with Angular v10+ and RxJS v6+. For Angular v6+ to v9, use @nativescript-angular-jwt v4**
 
 This library provides an `HttpInterceptor` which automatically attaches a [JSON Web Token](https://jwt.io) to `HttpClient` requests.
 
@@ -18,17 +18,11 @@ This library does not have any functionality for (or opinion about) implementing
 
 ```bash
 # installation with npm
-npm install nativescript-angular-jwt
+npm install @nativescript-angular-jwt
 
 # installation with yarn
-yarn add nativescript-angular-jwt
+yarn add @nativescript-angular-jwt
 ```
-
-**This library relies on the URL interface which is not supported in IE11.**
-To solve the IE11 compatibility, you can add a polyfill.
-
-- run `npm i --save url-polyfill`
-- add `import 'url-polyfill';` to `polyfills.ts` in your project
 
 ## Usage: Standalone
 
@@ -37,7 +31,7 @@ injectable features, you can simply create an instance of the utility and use it
 directly:
 
 ```ts
-import { JwtHelperService } from "nativescript-angular-jwt";
+import { JwtHelperService } from "@nativescript-angular-jwt";
 
 const helper = new JwtHelperService();
 
@@ -53,7 +47,7 @@ Import the `JwtModule` module and add it to your imports list. Call the `forRoot
 Be sure to import the `HttpClientModule` as well.
 
 ```ts
-import { JwtModule } from "nativescript-angular-jwt";
+import { JwtModule } from "@nativescript-angular-jwt";
 import { HttpClientModule } from "@angular/common/http";
 
 export function tokenGetter() {
@@ -268,7 +262,7 @@ Import the `JWT_OPTIONS` `InjectionToken` so that you can instruct it to use you
 Create a factory function and specify the options as you normally would if you were using `JwtModule.forRoot` directly. If you need to use a service in the function, list it as a parameter in the function and pass it in the `deps` array when you provide the function.
 
 ```ts
-import { JwtModule, JWT_OPTIONS } from 'nativescript-angular-jwt';
+import { JwtModule, JWT_OPTIONS } from '@nativescript-angular-jwt';
 import { TokenService } from './app.tokenservice';
 
 // ...
@@ -306,7 +300,7 @@ export function jwtOptionsFactory(tokenService) {
 The custom factory function approach described above can be used to get a token asynchronously with Ionic's `Storage`.
 
 ```ts
-import { JwtModule, JWT_OPTIONS } from 'nativescript-angular-jwt';
+import { JwtModule, JWT_OPTIONS } from '@nativescript-angular-jwt';
 import { Storage } from '@ionic/storage';
 
 export function jwtOptionsFactory(storage) {
@@ -345,7 +339,7 @@ This service contains helper functions:
 ## isTokenExpired (old tokenNotExpired function)
 
 ```
-import { JwtHelperService } from 'nativescript-angular-jwt';
+import { JwtHelperService } from '@nativescript-angular-jwt';
 // ...
 constructor(public jwtHelper: JwtHelperService) {}
 
@@ -357,7 +351,7 @@ console.log(this.jwtHelper.isTokenExpired()); // true or false
 ## getTokenExpirationDate
 
 ```
-import { JwtHelperService } from 'nativescript-angular-jwt';
+import { JwtHelperService } from '@nativescript-angular-jwt';
 // ...
 constructor(public jwtHelper: JwtHelperService) {}
 
@@ -369,7 +363,7 @@ console.log(this.jwtHelper.getTokenExpirationDate()); // date
 ## decodeToken
 
 ```
-import { JwtHelperService } from 'nativescript-angular-jwt';
+import { JwtHelperService } from '@nativescript-angular-jwt';
 // ...
 constructor(public jwtHelper: JwtHelperService) {}
 

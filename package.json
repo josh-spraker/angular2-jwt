@@ -1,36 +1,36 @@
 {
-    "name": "nativescript-angular-jwt",
-    "version": "1.0.4",
-    "description": "JSON Web Token helper library for Angular",
-    "private": false,
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nativescript-angular-jwt"
-    },
-    "author": "Sam Bellen",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/nativescript-angular-jwt/issues"
-    },
-    "keywords": [
-        "angular",
-        "angular 2",
-        "authentication",
-        "jwt"
-    ],
-    "homepage": "https://github.com/nativescript-angular-jwt",
-    "peerDependencies": {
-        "@angular/common": ">=9.0.0"
-    },
-    "dependencies": {
-        "tslib": "^2.0.0"
-    },
-    "main": "bundles/nativescript-angular-jwt.umd.js",
-    "module": "fesm2015/nativescript-angular-jwt.js",
-    "es2015": "fesm2015/nativescript-angular-jwt.js",
-    "esm2015": "esm2015/nativescript-angular-jwt.js",
-    "fesm2015": "fesm2015/nativescript-angular-jwt.js",
-    "typings": "nativescript-angular-jwt.d.ts",
-    "metadata": "nativescript-angular-jwt.metadata.json",
-    "sideEffects": false
+  "name": "@nativescript-angular-jwt",
+  "version": "1.0.5",
+  "description": "JSON Web Token helper library for Angular",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh-spraker/nativescript-angular-jwt"
+  },
+  "author": "Sam Bellen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josh-spraker/nativescript-angular-jwt/issues"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "authentication",
+    "jwt"
+  ],
+  "homepage": "https://github.com/josh-spraker/nativescript-angular-jwt",
+  "peerDependencies": {
+    "@angular/common": ">=9.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/nativescript-angular-jwt.umd.js",
+  "module": "fesm2015/nativescript-angular-jwt.js",
+  "es2015": "fesm2015/nativescript-angular-jwt.js",
+  "esm2015": "esm2015/nativescript-angular-jwt.js",
+  "fesm2015": "fesm2015/nativescript-angular-jwt.js",
+  "typings": "nativescript-angular-jwt.d.ts",
+  "metadata": "nativescript-angular-jwt.metadata.json",
+  "sideEffects": false
 }

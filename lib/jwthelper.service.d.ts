@@ -5,7 +5,7 @@ export declare class JwtHelperService {
     urlBase64Decode(str: string): string;
     private b64decode;
     private b64DecodeUnicode;
-    decodeToken<T = any>(token?: string): T;
+    decodeToken(token?: string): any;
     getTokenExpirationDate(token?: string): Date | null;
     isTokenExpired(token?: string, offsetSeconds?: number): boolean;
     getAuthScheme(authScheme: Function | string | undefined, request: HttpRequest<any>): string;
