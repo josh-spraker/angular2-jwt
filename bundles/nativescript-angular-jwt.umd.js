@@ -135,10 +135,11 @@
             this.skipWhenExpired = config.skipWhenExpired;
         }
         JwtInterceptor.prototype.isAllowedDomain = function (request) {
-            var requestUrl = new URL(request.url, this.document.location.origin);
+            var origin = this.document.location ? this.document.location.origin : null;
+            var requestUrl = new URL(request.url, origin);
             // If the host equals the current window origin,
             // the domain is allowed by default
-            if (requestUrl.host === this.document.location.host) {
+            if (origin && (requestUrl.host === this.document.location.host)) {
                 return true;
             }
             // If not the current domain, check the allowed list
@@ -153,10 +154,11 @@
         };
         JwtInterceptor.prototype.isDisallowedRoute = function (request) {
             var _this = this;
-            var requestedUrl = new URL(request.url, this.document.location.origin);
+            var origin = this.document.location ? this.document.location.origin : null;
+            var requestedUrl = new URL(request.url, origin);
             return (this.disallowedRoutes.findIndex(function (route) {
                 if (typeof route === "string") {
-                    var parsedRoute = new URL(route, _this.document.location.origin);
+                    var parsedRoute = new URL(route, origin);
                     return (parsedRoute.hostname === requestedUrl.hostname &&
                         parsedRoute.pathname === requestedUrl.pathname);
                 }
