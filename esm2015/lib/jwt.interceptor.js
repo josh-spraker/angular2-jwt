@@ -22,6 +22,7 @@ export class JwtInterceptor {
     }
     isAllowedDomain(request) {
 
+        if(!this.document || !this.document.location) return true;
         var origin = this.document && this.document.location ? this.document.location.origin : null;
         const requestUrl = new URL(request.url, origin);
         // If the host equals the current window origin,
@@ -42,6 +43,7 @@ export class JwtInterceptor {
     }
     isDisallowedRoute(request) {
 
+        if(!this.document || !this.document.location) return false;
         var origin = this.document && this.document.location ? this.document.location.origin : null;
         const requestedUrl = new URL(request.url, origin);
         return (this.disallowedRoutes.findIndex((route) => {
