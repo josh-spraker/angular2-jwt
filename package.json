@@ -1,6 +1,6 @@
 {
   "name": "nativescript-angular-jwt",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "JSON Web Token helper library for Angular",
   "private": false,
   "repository": {
