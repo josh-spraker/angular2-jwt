@@ -135,7 +135,7 @@
             this.skipWhenExpired = config.skipWhenExpired;
         }
         JwtInterceptor.prototype.isAllowedDomain = function (request) {
-            var origin = this.document.location ? this.document.location.origin : null;
+            var origin = this.document && this.document.location ? this.document.location.origin : null;
             var requestUrl = new URL(request.url, origin);
             // If the host equals the current window origin,
             // the domain is allowed by default
@@ -154,7 +154,7 @@
         };
         JwtInterceptor.prototype.isDisallowedRoute = function (request) {
             var _this = this;
-            var origin = this.document.location ? this.document.location.origin : null;
+            var origin = this.document && this.document.location ? this.document.location.origin : null;
             var requestedUrl = new URL(request.url, origin);
             return (this.disallowedRoutes.findIndex(function (route) {
                 if (typeof route === "string") {
